@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Two Column Layout</title>
+
+    <style>
+        img.resize {
+            max-width: 60%;
+            max-height: 60%;
+            padding-top: 25px;
+        }
+        img {
+            border-radius: 50%;
+        }
+        p,h1,h2 {
+            font-family: Calibri,sans-serif;
+        }
+        th, td {
+            border:1px solid black;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        a:link ,a:visited{
+            color: black;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        .body {
+            padding: 0;
+            margin: 0;
+        }
+
+        .Parent {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .child1 {
+            width: 35%;
+            height: 100vh;
+            background-color: lightgrey;
+            text-align: center;
+        }
+
+        .child2 {
+            width: 65%;
+            height: 100vh;
+            background-color: darkgrey;
+            padding-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="Parent">
+
+    <div class="child1">
+        <img class="resize" src="photo_2022-02-22_15-53-25.jpg" alt="Avatar" style="width:300px">
+
+        <h2>Personal Info</h2>
+        <table class="center">
+            <tr>
+                <th>Address</th>
+                <th>Telefon</th>
+                <th>Email</th>
+                <th>Social Media</th>
+            </tr>
+            <tr>
+                <td>Cluj, Romania</td>
+                <td><a href=tel:0737030296>0737030296</a></td>
+                <td><a href="mailto:florianmoga8@gmail.com">florianmoga8@gmail</a></td>
+                <td><a href="https://www.linkedin.com/in/florian-moga-83138a233/">Linkedin</a></td>
+            </tr>
+        </table>
+
+        <h2>Languages</h2>
+        <p>
+            Romanian—Native<br>
+            German—C1 Certificate<br>
+            English—C1 Certificate
+        </p>
+    </div>
+
+    <div class="child2">
+        <center>
+            <h1>Florian Moga</h1>
+        </center>
+        <p>
+            A second year student of bachelor in computer science in Cluj-Napoca.<br>
+            Main focus points are Artificial Intelligence and Machine Learning.<br>
+        </p>
+        <h2>Education</h2>
+        <p><strong>Bachelor of Computer Science in German</strong><br>
+            2020-present<br>
+            UBB Faculty of Mathematics and Computer Science</p>
+        <p><strong>High school</strong><br>
+            2016-2020<br>
+            Samuel von Brukenthal National College, Mathematics and Computer Science Department
+        </p>
+        <h2>Work Experience</h2>
+        <p>
+            Accenture Machine Learning Internship
+        </p>
+        <h2>Skills</h2>
+        <p>
+            <strong>Coding</strong><br>
+            OOP, Databases, Bash<br>
+            <strong>Programming Languages</strong><br>
+            Python, Java, C++, MySQL, Prolog
+        </p>
+    </div>
+</div>
+</body>
+
+</html>
